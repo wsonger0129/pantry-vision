@@ -39,45 +39,7 @@ In the planning stage, I may use:
 
 ## 🧰 Development Setup
 
-### Quick Start with AI Recipe Agent
-
-1. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. **Set up OpenAI API Key**
-   - Get your API key from [OpenAI Platform](https://platform.openai.com/api-keys)
-   - Copy `env.example` to `.env` and add your API key:
-     ```bash
-     cp env.example .env
-     # Edit .env and add: OPENAI_API_KEY=your_api_key_here
-     ```
-
-3. **Configure Model and Data Storage (Optional)**
-   - Edit `.env` to customize your settings:
-     ```bash
-     # Choose your OpenAI model
-     OPENAI_MODEL=gpt-3.5-turbo  # or gpt-4, gpt-4o, gpt-4o-mini
-     OPENAI_MAX_TOKENS=2000
-     OPENAI_TEMPERATURE=0.7
-     
-     # Enable local data storage
-     SAVE_USER_DATA=true
-     DATA_DIR=./data
-     ```
-
-3. **Run the AI Recipe Agent**
-   ```bash
-   python src/main.py
-   ```
-
-4. **First Time Setup**
-   - The agent will prompt you for your preferences, fitness goals, and allergies
-   - After setup, you can ask for recipe recommendations like:
-     - "I want meat for dinner tonight"
-     - "vegetarian lunch ideas"
-     - "high protein breakfast"
+Coming soon
 
 ### Development Environment
 - Start in **Python IDE** (e.g., VS Code, PyCharm, or Jupyter) for prototyping.
