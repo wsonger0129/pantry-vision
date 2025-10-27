@@ -8,3 +8,8 @@ flask
 streamlit
 sqlalchemy
 ultralytics
+openai
+python-dotenv
+colorama
+requests
+beautifulsoup4
