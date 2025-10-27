@@ -42,5 +42,5 @@ This project is licensed under the **MIT License**, allowing others to use, modi
 
 ---
 
-Created by Whitney Songer
+Created by Whitney Songer<br>
 “Less thinking, more eating!”
