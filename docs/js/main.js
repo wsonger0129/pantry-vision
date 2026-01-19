@@ -20,10 +20,18 @@ document.addEventListener('DOMContentLoaded', () => {
         box.style.transition = 'background-color 1s ease-out';
         box.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
         box.style.opacity = '1';
-        overlay.style.transition = 'backdrop-filter 1s ease-out';
-        overlay.style.opacity = '0.8';
-        overlay.style.backdropFilter = 'blur(50px)';
+        overlay.style.transition = 'background-color 0.5s ease-out, backdrop-filter 0.5s ease-out';
+        overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
+        overlay.style.opacity = '1';
+        overlay.style.backdropFilter = 'blur(3px)';
     });
+});
+
+// After loaded
+const formButton = document.getElementById("form-button");
+
+formButton.addEventListener("click", () => {
+    console.log("Form button clicked");
 });
 // // Add click event listener to overlay
 // overlay.addEventListener("click", () => {
