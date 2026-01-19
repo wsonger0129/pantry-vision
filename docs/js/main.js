@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Add animation: Fade in and blur the background
     requestAnimationFrame(() => {
-        box.style.transition = 'opacity 0.5s ease-out';
-        box.style.opacity = '0.8';
-        overlay.style.transition = 'backdrop-filter 0.5s ease-out';
+        box.style.transition = 'background-color 1s ease-out';
+        box.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+        overlay.style.transition = 'backdrop-filter 1s ease-out';
         overlay.style.opacity = '0.5';
-        overlay.style.backdropFilter = 'blur(10px)';
+        overlay.style.backdropFilter = 'blur(100px)';
     });
 });
 // // Add click event listener to overlay
