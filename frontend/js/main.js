@@ -1,0 +1,1 @@
+console.log("PantryVision frontend loaded");
