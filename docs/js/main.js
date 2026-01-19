@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(() => {
         box.style.transition = 'background-color 1s ease-out';
         box.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+        overlay.style.opacity = '1'
         overlay.style.transition = 'backdrop-filter 1s ease-out';
         overlay.style.opacity = '0.5';
         overlay.style.backdropFilter = 'blur(100px)';
