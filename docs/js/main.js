@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.style.opacity = '1'
         overlay.style.transition = 'backdrop-filter 1s ease-out';
         overlay.style.opacity = '0.5';
-        overlay.style.backdropFilter = 'blur(100px)';
+        overlay.style.backdropFilter = 'blur(50px)';
     });
 });
 // // Add click event listener to overlay
