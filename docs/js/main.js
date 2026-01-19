@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         box.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
         box.style.opacity = '1';
         overlay.style.transition = 'backdrop-filter 1s ease-out';
-        overlay.style.opacity = '0.5';
+        overlay.style.opacity = '0.8';
         overlay.style.backdropFilter = 'blur(50px)';
     });
 });
