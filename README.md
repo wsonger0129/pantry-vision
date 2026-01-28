@@ -3,6 +3,14 @@
 ## 🌐 Live Demo
 Check out the live website demo: **[https://wsonger0129.github.io/pantry-vision/](https://wsonger0129.github.io/pantry-vision/)**
 
+To run the app locally, use the command:
+```
+uvicorn main:app --reload --port 8080
+```
+and visit: http://127.0.0.1:8080/
+
+Note: Will change after I implement Docker
+
 ## 🧠 Overview
 **PantryVision** is an intelligent kitchen assistant that helps users automatically track their groceries, suggest recipes based on available ingredients, and minimize food waste. It uses **computer vision** to recognize items in your fridge or pantry and integrates with a **database and AI agent** to provide personalized recipe and shopping suggestions.
 

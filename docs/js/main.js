@@ -28,14 +28,29 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // After loaded
-const formButton = document.getElementById("form-button");
+const input = document.getElementById("input"); // Input text box
+const goalText = document.getElementById("goal-text"); // Goal text
+var timesInputted = 0;
 
-formButton.addEventListener("click", () => {
-    console.log("Form button clicked");
+input.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        console.log("Input entered: " + input.value);
+        input.value = "";
+        timesInputted++;
+    }
+    switch (timesInputted) {
+    case 1:
+        goalText.textContent = "what do you like? (savory, chocolate, crunchy, etc.)";
+        break;
+    case 2:
+        goalText.textContent = "what can you absolutely not stand? (pickles, tomatoes, mushrooms, etc.)";
+        break;
+    case 3:
+        goalText.textContent = "alright! what are you feeling right now? (big hearty meal, light snack, must have chicken, etc.)";
+        break;
+    case 4:
+        goalText.textContent = "generating recipe... (not finished yet)";
+        input.disabled = true;
+        break;
+    }
 });
-// // Add click event listener to overlay
-// overlay.addEventListener("click", () => {
-//     overlay.style.transition = "opacity 0.3s ease, backdrop-filter 0.3s ease";
-//     overlay.style.opacity = 0;
-//     overlay.style.backdropFilter = "blur(0px)";
-// });
