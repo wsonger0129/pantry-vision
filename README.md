@@ -25,9 +25,9 @@ The goal of PantryVision is to create a smart, hands-free inventory management s
 In the planning stage, I may use:
 - **Python** — Primary programming language.
 - **OpenCV / YOLO / TensorFlow** — For object detection and image recognition.
-- **SQLite / Firebase** — For storing inventory and user data.
+- **SQLite** — For storing inventory and user data.
 - **LangChain / OpenAI API** — For recipe generation and intelligent meal planning.
-- **FastAPI or Flask** — Backend for handling API calls and database interaction.
+- **FastAPI** — Backend for handling API calls and database interaction.
 - **React Native (optional)** — For a mobile interface or companion app.
 
 ## 🧩 Key Features (Prototype Goals)
