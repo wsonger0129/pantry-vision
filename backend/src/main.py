@@ -1,5 +1,14 @@
-"""
-PantryVision Terminal Interface
+from fastapi import FastAPI
 
-Interactive terminal interface for the PantryVision AI Recipe Agent.
-"""
+app = FastAPI()
+
+# app.include_router(inventory.router, prefix="/inventory")
+# app.include_router(recipes.router, prefix="/recipes")
+
+@app.get("/")
+def root():
+    return {"status": "PantryVision API is running YAY"}
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
